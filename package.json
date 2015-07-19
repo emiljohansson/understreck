@@ -1,0 +1,23 @@
+{
+  "name": "understreck",
+  "version": "0.0.0",
+  "description": "Recreation of some of lodash's modules. Don't use this, use lodash!",
+  "main": "index.js",
+  "scripts": {
+    "test": "node src/test.js | tap-dot"
+  },
+  "keywords": [
+    "utility",
+    "underscore",
+    "lodash"
+  ],
+  "author": "Emil Johansson <emiljohansson@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "list-files": "^1.0.1",
+    "sinon": "^1.15.3",
+    "tap-dot": "^1.0.0",
+    "tap-spec": "^4.0.0",
+    "tape": "^4.0.0"
+  }
+}
