@@ -1,6 +1,6 @@
 {
   "name": "understreck",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Recreation of some of lodash's modules. Don't use this, use lodash!",
   "main": "index.js",
   "scripts": {
