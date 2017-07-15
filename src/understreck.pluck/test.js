@@ -3,19 +3,19 @@
 var test = require('ava');
 var pluck = require('./');
 
-test('exists', function(t) {
+test('exists', t => {
     t.is(typeof pluck, 'function');
     
 });
 
-test('return an array', function(t) {
+test('return an array', t => {
     t.deepEqual(pluck(), []);
     t.deepEqual(pluck([{b:444}, {a:123}]), []);
     t.deepEqual(pluck(null, "name"), []);
     
 });
 
-test('return values based on key', function(t) {
+test('return values based on key', t => {
     var users = [{
         'user': 'barney',
         'age': 36

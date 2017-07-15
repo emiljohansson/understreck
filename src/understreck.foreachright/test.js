@@ -4,12 +4,12 @@ var test = require('ava');
 var sinon = require('sinon');
 var forEachRight = require('./');
 
-test('exists', function(t) {
+test('exists', t => {
     t.is(typeof forEachRight, 'function');
     
 });
 
-test('do nothing', function(t) {
+test('do nothing', t => {
     var callback = sinon.spy();
     forEachRight();
     t.false(callback.called);
@@ -22,7 +22,7 @@ test('do nothing', function(t) {
     
 });
 
-test('call callback each iteration', function(t) {
+test('call callback each iteration', t => {
     var callback = sinon.spy();
     forEachRight([1, 2, 3], callback);
     t.is(callback.callCount, 3);
@@ -32,7 +32,7 @@ test('call callback each iteration', function(t) {
     
 });
 
-test('pass item each iteration', function(t) {
+test('pass item each iteration', t => {
     var result = [];
     function iteratee(value) {
         result.push(value);
@@ -42,7 +42,7 @@ test('pass item each iteration', function(t) {
     
 });
 
-test('pass key each iteration', function(t) {
+test('pass key each iteration', t => {
     var result = [];
     function iteratee(value, key) {
         result.push(key);

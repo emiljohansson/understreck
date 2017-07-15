@@ -3,12 +3,12 @@
 var test = require('ava');
 var uniqueId = require('./');
 
-test('exists', function(t) {
+test('exists', t => {
     t.is(typeof uniqueId, 'function');
     
 });
 
-test('return a higher number each call', function(t) {
+test('return a higher number each call', t => {
     var first = uniqueId();
     t.is(typeof first, 'number');
     t.is(first, 1);

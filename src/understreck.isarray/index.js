@@ -1,7 +1,3 @@
-"use strict";
+const isArray = collection => Object.prototype.toString.call(collection) === '[object Array]'
 
-function isArray(collection) {
-    return Object.prototype.toString.call(collection) === '[object Array]';
-}
-
-module.exports = Array.isArray || isArray;
+module.exports = Array.isArray || isArray

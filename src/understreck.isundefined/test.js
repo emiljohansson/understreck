@@ -3,12 +3,12 @@
 var test = require('ava');
 var isUndefined = require('./');
 
-test('exists', function(t) {
+test('exists', t => {
     t.is(typeof isUndefined, 'function');
     
 });
 
-test('return a boolean', function(t) {
+test('return a boolean', t => {
     t.is(isUndefined(), true);
     t.is(isUndefined(undefined), true);
     t.is(isUndefined(void 0), true);

@@ -1,6 +1,6 @@
 "use strict";
 
-var isArray = require('../understreck.isarray');
+const isArray = require('../understreck.isarray')
 
 function indexOf(array, value, fromIndex) {
     if (typeof fromIndex !== 'number') {

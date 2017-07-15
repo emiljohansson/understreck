@@ -3,17 +3,17 @@
 var test = require('ava');
 var isFunction = require('./');
 
-test('exists', function(t) {
+test('exists', t => {
     t.is(typeof isFunction, 'function');
     
 });
 
-test('return false', function(t) {
+test('return false', t => {
     t.false(isFunction());
     
 });
 
-test('return true', function(t) {
+test('return true', t => {
     t.true(isFunction(function() {}));
     
 });

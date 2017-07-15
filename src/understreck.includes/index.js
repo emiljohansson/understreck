@@ -2,7 +2,7 @@
 
 var forEach = require('../understreck.foreach');
 var indexOf = require('../understreck.indexof');
-var isArray = require('../understreck.isarray');
+const isArray = require('../understreck.isarray')
 var isString = require('../understreck.isstring');
 var keys = require('../understreck.keys');
 

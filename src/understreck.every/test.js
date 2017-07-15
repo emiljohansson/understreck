@@ -3,19 +3,19 @@
 var test = require('ava');
 var every = require('./');
 
-test('exists', function(t) {
+test('exists', t => {
     t.is(typeof every, 'function');
 
 });
 
-test('return a boolean', function(t) {
+test('return a boolean', t => {
     t.is(every(), false);
     t.is(every(null, Boolean), false);
     t.is(every([], null), false);
 
 });
 
-test('arrays - compare all objects', function(t) {
+test('arrays - compare all objects', t => {
   function isBoolean(v) {
       return typeof v === 'boolean';
   }

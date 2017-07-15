@@ -7,22 +7,22 @@ function add(a, b) {
     return a + b;
 }
 
-test('exists', function(t) {
+test('exists', t => {
     t.is(typeof reduce, 'function');
 
 });
 
-test('do nothing', function(t) {
+test('do nothing', t => {
     t.is(reduce(), undefined);
 
 });
 
-test('arrays - return first value', function(t) {
+test('arrays - return first value', t => {
     t.is(reduce([2, 3, 4]), 2);
 
 });
 
-test('arrays - sum the numbers', function(t) {
+test('arrays - sum the numbers', t => {
     function sum(result, value) {
         return add(result, value);
     }
@@ -31,12 +31,12 @@ test('arrays - sum the numbers', function(t) {
 
 });
 
-test('objects - return first value', function(t) {
+test('objects - return first value', t => {
     t.is(reduce({ 'a': 5, 'b': 2 }), 5);
 
 });
 
-test('objects - modify each number', function(t) {
+test('objects - modify each number', t => {
     t.deepEqual(reduce({ 'a': 1, 'b': 2 }, function(result, n, key) {
         result[key] = n * 3;
         return result;

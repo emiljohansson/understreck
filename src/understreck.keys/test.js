@@ -3,12 +3,12 @@
 var test = require('ava');
 var keys = require('./');
 
-test('exists', function(t) {
+test('exists', t => {
     t.is(typeof keys, 'function');
     
 });
 
-test('return an array', function(t) {
+test('return an array', t => {
     t.true(Array.isArray(keys()));
     t.true(Array.isArray(keys(null)));
     t.true(Array.isArray(keys(null, 123)));
@@ -16,7 +16,7 @@ test('return an array', function(t) {
     
 });
 
-test('return keys of the object', function(t) {
+test('return keys of the object', t => {
     function Foo() {
         this.a = 1;
         this.b = 2;

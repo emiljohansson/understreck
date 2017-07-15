@@ -1,24 +1,24 @@
-"use strict";
+const isArray = require('../understreck.isarray')
 
-var isArray = require('../understreck.isarray');
-
-function chunk(array, size) {
-    var result = [];
-    var length = array ? array.length : 0;
-    var startIndex = 0;
-    var nextIndex = size;
-    if (!isArray(array)) {
-        return result;
-    }
-    if (typeof size !== 'number' || size < 1 || size >= length) {
-        return array;
-    }
-    while(startIndex < length) {
-        result.push(array.slice(startIndex, nextIndex));
-        startIndex += size;
-        nextIndex += size;
-    }
-    return result;
+const chunk = (array, size) => {
+  const result = []
+  const length = array
+    ? array.length
+    : 0
+  let startIndex = 0
+  let nextIndex = size
+  if (!isArray(array)) {
+    return result
+  }
+  if (typeof size !== 'number' || size < 1 || size >= length) {
+    return array
+  }
+  while(startIndex < length) {
+    result.push(array.slice(startIndex, nextIndex))
+    startIndex += size
+    nextIndex += size
+  }
+  return result
 }
 
-module.exports = chunk;
+module.exports = chunk
