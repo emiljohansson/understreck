@@ -1,10 +1,6 @@
 import test from 'ava'
 const isString = require('./')
 
-test('exists', t => {
-  t.is(typeof isString, 'function')
-})
-
 test('not return false', t => {
   t.false(isString())
   t.false(isString(function() {}))

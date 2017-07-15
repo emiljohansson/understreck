@@ -1,19 +1,11 @@
-
-
 import test from 'ava'
 var isNull = require('./')
 
-test('exists', t => {
-    t.is(typeof isNull, 'function')
-    
-})
-
 test('return a boolean', t => {
-    t.is(isNull(null), true)
-    t.is(isNull(), false)
-    t.is(isNull(undefined), false)
-    t.is(isNull(void 0), false)
-    t.is(isNull(123), false)
-    t.is(isNull("abc"), false)
-    
+  t.is(isNull(null), true)
+  t.is(isNull(), false)
+  t.is(isNull(undefined), false)
+  t.is(isNull(void 0), false)
+  t.is(isNull(123), false)
+  t.is(isNull("abc"), false)
 })

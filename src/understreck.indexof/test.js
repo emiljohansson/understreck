@@ -1,10 +1,6 @@
 import test from 'ava'
 import indexOf from '.'
 
-test('exists', t => {
-  t.is(typeof indexOf, 'function')
-})
-
 test('do nothing', t => {
   t.false(indexOf())
   t.false(indexOf(null))

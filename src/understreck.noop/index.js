@@ -1,3 +1,3 @@
-const noop () => {}
+const noop = () => {}
 
 export default noop
