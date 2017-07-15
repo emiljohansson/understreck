@@ -1,7 +1,7 @@
-"use strict"
 
-var test = require('ava')
-var isFunction = require('./')
+
+const test = require('ava')
+const isFunction = require('./')
 
 test('exists', t => {
     t.is(typeof isFunction, 'function')

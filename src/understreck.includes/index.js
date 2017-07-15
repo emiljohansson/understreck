@@ -1,4 +1,4 @@
-"use strict"
+
 
 var forEach = require('../understreck.foreach')
 var indexOf = require('../understreck.indexof')

@@ -1,6 +1,6 @@
-"use strict"
 
-var test = require('ava')
+
+const test = require('ava')
 var some = require('./')
 
 test('exists', t => {

@@ -1,4 +1,4 @@
-"use strict"
+
 
 function isUndefined(value) {
     return value === void 0

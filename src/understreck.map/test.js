@@ -1,7 +1,7 @@
-"use strict"
 
-var test = require('ava')
-var sinon = require('sinon')
+
+const test = require('ava')
+const sinon = require('sinon')
 var map = require('./')
 
 test('exists', t => {

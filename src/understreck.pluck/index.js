@@ -1,4 +1,4 @@
-"use strict"
+
 
 var forEach = require('../understreck.foreach')
 const isArray = require('../understreck.isarray')

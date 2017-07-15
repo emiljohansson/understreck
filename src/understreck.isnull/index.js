@@ -1,4 +1,4 @@
-"use strict"
+
 
 function isNull(value) {
     return value === null

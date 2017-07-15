@@ -1,6 +1,6 @@
-"use strict"
 
-var test = require('ava')
+
+const test = require('ava')
 var uniqueId = require('./')
 
 test('exists', t => {

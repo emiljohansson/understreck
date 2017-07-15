@@ -1,6 +1,4 @@
-"use strict"
-
-var test = require('ava')
+const test = require('ava')
 var every = require('./')
 
 test('exists', t => {

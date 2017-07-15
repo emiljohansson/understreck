@@ -1,8 +1,8 @@
-"use strict"
 
-var test = require('ava')
-var sinon = require('sinon')
-var findIndex = require('./')
+
+const test = require('ava')
+const sinon = require('sinon')
+const findIndex = require('./')
 
 test('exists', t => {
     t.is(typeof findIndex, 'function')

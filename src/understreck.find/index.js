@@ -1,8 +1,6 @@
-"use strict"
-
 const isArray = require('../understreck.isarray')
-var isFunction = require('../understreck.isfunction')
-var findIndex = require('../understreck.findindex')
+const isFunction = require('../understreck.isfunction')
+const findIndex = require('../understreck.findindex')
 
 function find(collection, predicate) {
     if (!isArray(collection) || !isFunction(predicate)) {

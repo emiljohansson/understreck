@@ -1,7 +1,7 @@
-"use strict"
+
 
 const isArray = require('../understreck.isarray')
-var isFunction = require('../understreck.isfunction')
+const isFunction = require('../understreck.isfunction')
 
 function some(collection, predicate) { //, thisArg
     var length = collection ? collection.length : 0

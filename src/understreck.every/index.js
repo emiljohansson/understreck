@@ -1,7 +1,5 @@
-"use strict"
-
 const isArray = require('../understreck.isarray')
-var isFunction = require('../understreck.isfunction')
+const isFunction = require('../understreck.isfunction')
 
 function every(collection, predicate) { //, thisArg
     if (isArray(collection) && isFunction(predicate)) {

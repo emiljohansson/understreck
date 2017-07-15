@@ -1,8 +1,8 @@
-"use strict"
+
 
 var keys = require('../understreck.keys')
 const isArray = require('../understreck.isarray')
-var isFunction = require('../understreck.isfunction')
+const isFunction = require('../understreck.isfunction')
 
 function reduce(collection, iteratee, accumulator, thisArg) {
     if (isArray(collection)) {

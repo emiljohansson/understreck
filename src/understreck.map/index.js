@@ -1,8 +1,8 @@
-"use strict"
+
 
 var forEach = require('../understreck.foreach')
 const isArray = require('../understreck.isarray')
-var isFunction = require('../understreck.isfunction')
+const isFunction = require('../understreck.isfunction')
 
 function map(collection, iteratee) {
     var result = []

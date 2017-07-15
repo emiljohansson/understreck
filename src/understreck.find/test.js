@@ -1,19 +1,17 @@
-"use strict"
-
-var test = require('ava')
-var sinon = require('sinon')
-var find = require('./')
+const test = require('ava')
+const sinon = require('sinon')
+const find = require('./')
 
 test('exists', t => {
     t.is(typeof find, 'function')
-    
+
 })
 
 test('do nothing', t => {
     var callback = sinon.spy()
     find(callback)
     t.false(callback.called)
-    
+
 })
 
 test('return first match', t => {
@@ -41,5 +39,5 @@ test('return first match', t => {
     })
 
     t.is(result, users[2])
-    
+
 })
