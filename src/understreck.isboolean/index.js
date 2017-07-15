@@ -1,3 +1,3 @@
-export default value =>
-  typeof value === 'boolean' ||
-  Object.prototype.toString.call(value) === '[object Boolean]'
+import toString from '../understreck.tostring'
+
+export default value => toString(value) === '[object Boolean]'

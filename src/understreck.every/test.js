@@ -1,5 +1,6 @@
 import test from 'ava'
 import every from '.'
+import isBoolean from '../understreck.isboolean'
 
 test('return a boolean', t => {
   t.is(every(), false)
@@ -8,9 +9,6 @@ test('return a boolean', t => {
 })
 
 test('arrays - compare all objects', t => {
-  function isBoolean (v) {
-    return typeof v === 'boolean'
-  }
   t.is(every([true, 1, null, 'yes'], isBoolean), false)
   t.is(every([true, false, true], isBoolean), true)
 })
