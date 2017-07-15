@@ -11,6 +11,7 @@
   "author": "Emil Johansson <emiljohansson@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "lint": "standard {benchmarks,src}/**/* || exit 0",
     "test": "ava src/**/test.js"
   },
   "ava": {

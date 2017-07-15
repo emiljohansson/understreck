@@ -1,9 +1,11 @@
+import isString from '../understreck.isstring'
+
 function keys (object) {
-  var result = []
-  if (typeof object !== 'object' && typeof object !== 'string') {
+  const result = []
+  if (typeof object !== 'object' && !isString(object)) {
     return result
   }
-  for (var key in object) {
+  for (let key in object) {
     result.push(key)
   }
   return result

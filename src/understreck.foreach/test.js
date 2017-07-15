@@ -24,9 +24,8 @@ test('call callback each iteration', t => {
 })
 
 test('pass item each iteration', t => {
-  var result = []
-
-  function iteratee (value) {
+  const result = []
+  const iteratee = (value) => {
     result.push(value)
   }
   forEach([1, 2, 3], iteratee)
@@ -34,9 +33,8 @@ test('pass item each iteration', t => {
 })
 
 test('pass key each iteration', t => {
-  var result = []
-
-  function iteratee (value, key) {
+  const result = []
+  const iteratee = (value, key) => {
     result.push(key)
   }
   forEach([1, 2, 3], iteratee)

@@ -5,7 +5,7 @@ function forEachRight (collection, iteratee) {
   if (!isArray(collection) || !isFunction(iteratee)) {
     return
   }
-  var index = collection.length
+  let index = collection.length
   while (index--) {
     iteratee(collection[index], index)
   }

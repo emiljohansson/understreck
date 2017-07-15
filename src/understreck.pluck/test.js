@@ -12,7 +12,7 @@ test('return an array', t => {
 })
 
 test('return values based on key', t => {
-  var users = [{
+  const users = [{
     'user': 'barney',
     'age': 36
   }, {

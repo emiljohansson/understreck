@@ -24,7 +24,7 @@ test('call callback each iteration', t => {
 })
 
 test('pass item each iteration', t => {
-  var result = []
+  const result = []
 
   function iteratee (value) {
     result.push(value)
@@ -34,7 +34,7 @@ test('pass item each iteration', t => {
 })
 
 test('pass key each iteration', t => {
-  var result = []
+  const result = []
 
   function iteratee (value, key) {
     result.push(key)

@@ -1,9 +1,10 @@
 import test from 'ava'
 import sinon from 'sinon'
 import map from '.'
+import isArray from '../understreck.isarray'
 
 test('returns an array', t => {
-  t.is(Array.isArray(map()), true)
+  t.is(isArray(map()), true)
 })
 
 test('call callback each iteration', t => {
@@ -16,9 +17,7 @@ test('call callback each iteration', t => {
 })
 
 test('modify each item', t => {
-  function timesByThree (value) {
-    return value * 3
-  }
-  var result = map([1, 2, 3], timesByThree)
+  const timesByThree = value => value * 3
+  const result = map([1, 2, 3], timesByThree)
   t.deepEqual(result, [3, 6, 9])
 })

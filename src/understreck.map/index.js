@@ -1,7 +1,7 @@
 import forEach from '../understreck.foreach'
 
 function map (collection, iteratee) {
-  var result = []
+  const result = []
   forEach(collection, item => {
     result.push(iteratee(item))
   })

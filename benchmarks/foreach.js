@@ -20,7 +20,7 @@ const forEachIteratee = () => {
 
 module.exports = (onCycle) => new Promise((resolve, reject) => {
   const onComplete = () => resolve(suite)
-  
+
   suite
     .add('forEach#native', () => {
       list.forEach(forEachIteratee())

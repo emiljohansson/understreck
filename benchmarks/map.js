@@ -6,9 +6,9 @@ const settings = {
   'async': true
 }
 
-var list = [];
+var list = []
 for (var i = 0; i < 10000; i++) {
-  list.push(i);
+  list.push(i)
 }
 
 const timesByThree = value => value * 3

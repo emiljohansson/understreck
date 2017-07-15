@@ -5,8 +5,8 @@ function findIndex (collection, predicate) {
   if (!isArray(collection) || !isFunction(predicate)) {
     return
   }
-  var index = -1
-  var length = collection.length
+  let index = -1
+  const length = collection.length
   while (++index < length) {
     if (predicate(collection[index])) {
       return index

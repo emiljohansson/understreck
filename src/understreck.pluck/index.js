@@ -3,7 +3,7 @@ import isArray from '../understreck.isarray'
 import isUndefined from '../understreck.isundefined'
 
 function pluck (collection, path) {
-  var result = []
+  const result = []
   if (!isArray(collection)) {
     return result
   }
