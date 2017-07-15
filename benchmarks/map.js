@@ -1,13 +1,13 @@
 const Benchmark = require('benchmark')
-const map = require('../src/understreck.map')
+const { map } = require('../dist/understreck')
 
 const suite = new Benchmark.Suite()
 const settings = {
   'async': true
 }
 
-var list = []
-for (var i = 0; i < 10000; i++) {
+const list = []
+for (let i = 0; i < 10000; i++) {
   list.push(i)
 }
 

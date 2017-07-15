@@ -11,6 +11,8 @@
   "author": "Emil Johansson <emiljohansson@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "build": "webpack understreck.js dist/understreck.js && babel dist/understreck.js >> dist/understreck.js",
+    "benchmark": "node benchmarks",
     "lint": "standard {benchmarks,src}/**/* || exit 0",
     "test": "ava src/**/test.js"
   },
@@ -27,13 +29,15 @@
   },
   "devDependencies": {
     "ava": "^0.21.0",
+    "babel-cli": "^6.24.1",
     "babel-core": "^6.25.0",
     "babel-preset-latest": "^6.24.1",
     "babel-register": "^6.24.1",
     "benchmark": "^2.1.0",
     "chalk": "^2.0.1",
     "sinon": "^2.3.8",
-    "standard": "^10.0.2"
+    "standard": "^10.0.2",
+    "webpack": "^3.3.0"
   },
   "dependencies": {
     "array-insertat": "^2.0.0"
