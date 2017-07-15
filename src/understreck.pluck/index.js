@@ -1,20 +1,20 @@
-"use strict";
+"use strict"
 
-var forEach = require('../understreck.foreach');
+var forEach = require('../understreck.foreach')
 const isArray = require('../understreck.isarray')
-var isUndefined = require('../understreck.isundefined');
+var isUndefined = require('../understreck.isundefined')
 
 function pluck(collection, path) {
-    var result = [];
+    var result = []
     if (!isArray(collection)) {
-        return result;
+        return result
     }
     forEach(collection, function(item) {
         if (!isUndefined(item[path])) {
-            result.push(item[path]);
+            result.push(item[path])
         }
-    });
-    return result;
+    })
+    return result
 }
 
-module.exports = pluck;
+module.exports = pluck

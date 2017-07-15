@@ -1,7 +1,7 @@
-"use strict";
+"use strict"
 
 function isNull(value) {
-    return value === null;
+    return value === null
 }
 
-module.exports = isNull;
+module.exports = isNull

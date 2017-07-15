@@ -1,10 +1,10 @@
-"use strict";
+"use strict"
 
-var currentId = 0;
+var currentId = 0
 
 function uniqueId() {
-    var id = ++currentId;
-    return id;
+    var id = ++currentId
+    return id
 }
 
-module.exports = uniqueId;
+module.exports = uniqueId

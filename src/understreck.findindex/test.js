@@ -1,20 +1,20 @@
-"use strict";
+"use strict"
 
-var test = require('ava');
-var sinon = require('sinon');
-var findIndex = require('./');
+var test = require('ava')
+var sinon = require('sinon')
+var findIndex = require('./')
 
 test('exists', t => {
-    t.is(typeof findIndex, 'function');
+    t.is(typeof findIndex, 'function')
     
-});
+})
 
 test('do nothing', t => {
-    var callback = sinon.spy();
-    findIndex(callback);
-    t.false(callback.called);
+    var callback = sinon.spy()
+    findIndex(callback)
+    t.false(callback.called)
     
-});
+})
 
 test('return first match', t => {
     var users = [{
@@ -29,17 +29,17 @@ test('return first match', t => {
         'user': 'pebbles',
         'age': 1,
         'active': true
-    }];
+    }]
     var result = findIndex(users, function(chr) {
-        return chr.age < 40;
-    });
+        return chr.age < 40
+    })
 
-    t.is(result, 0);
+    t.is(result, 0)
 
     result = findIndex(users, function(chr) {
-        return chr.age < 30;
-    });
+        return chr.age < 30
+    })
 
-    t.is(result, 2);
+    t.is(result, 2)
     
-});
+})

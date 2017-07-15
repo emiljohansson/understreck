@@ -1,17 +1,17 @@
-"use strict";
+"use strict"
 
 const isArray = require('../understreck.isarray')
-var isFunction = require('../understreck.isfunction');
+var isFunction = require('../understreck.isfunction')
 
 function forEach(collection, iteratee) {
     if (!isArray(collection) || !isFunction(iteratee)) {
-        return;
+        return
     }
-    var index = -1;
-    var length = collection.length;
+    var index = -1
+    var length = collection.length
     while(++index < length) {
-        iteratee(collection[index], index);
+        iteratee(collection[index], index)
     }
 }
 
-module.exports = forEach;
+module.exports = forEach

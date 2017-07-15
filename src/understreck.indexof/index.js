@@ -1,22 +1,22 @@
-"use strict";
+"use strict"
 
 const isArray = require('../understreck.isarray')
 
 function indexOf(array, value, fromIndex) {
     if (typeof fromIndex !== 'number') {
-        fromIndex = 0;
+        fromIndex = 0
     }
     if (!isArray(array)) {
-        return false;
+        return false
     }
-    var index = fromIndex - 1;
-    var length = array.length;
+    var index = fromIndex - 1
+    var length = array.length
     while(++index < length) {
         if (array[index] === value) {
-            return true;
+            return true
         }
     }
-    return false;
+    return false
 }
 
-module.exports = indexOf;
+module.exports = indexOf

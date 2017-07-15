@@ -1,7 +1,7 @@
-"use strict";
+"use strict"
 
 function isFunction(value) {
-    return typeof value === 'function';
+    return typeof value === 'function'
 }
 
-module.exports = isFunction;
+module.exports = isFunction

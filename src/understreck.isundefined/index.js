@@ -1,8 +1,8 @@
-"use strict";
+"use strict"
 
 function isUndefined(value) {
-    return value === void 0;
-    // return typeof value === 'undefined';
+    return value === void 0
+    // return typeof value === 'undefined'
 }
 
-module.exports = isUndefined;
+module.exports = isUndefined

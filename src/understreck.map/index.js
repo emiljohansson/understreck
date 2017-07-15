@@ -1,18 +1,18 @@
-"use strict";
+"use strict"
 
-var forEach = require('../understreck.foreach');
+var forEach = require('../understreck.foreach')
 const isArray = require('../understreck.isarray')
-var isFunction = require('../understreck.isfunction');
+var isFunction = require('../understreck.isfunction')
 
 function map(collection, iteratee) {
-    var result = [];
+    var result = []
     if (!isArray(collection) || !isFunction(iteratee)) {
-        return result;
+        return result
     }
     forEach(collection, function(item) {
-        result.push(iteratee(item));
-    });
-    return result;
+        result.push(iteratee(item))
+    })
+    return result
 }
 
-module.exports = map;
+module.exports = map

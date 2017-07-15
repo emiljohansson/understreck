@@ -1,14 +1,14 @@
-"use strict";
+"use strict"
 
 function keys(object) {
-    var result = [];
+    var result = []
     if (typeof object !== 'object' && typeof object !== 'string') {
-        return result;
+        return result
     }
     for (var key in object) {
-        result.push(key);
+        result.push(key)
     }
-    return result;
+    return result
 }
 
-module.exports = keys;
+module.exports = keys
