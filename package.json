@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "Recreation of some of lodash's modules. Don't use this, use lodash!",
   "main": "index.js",
-  "scripts": {
-    "test": "node src/test.js | tap-dot"
-  },
   "keywords": [
     "utility",
     "underscore",
@@ -13,11 +10,15 @@
   ],
   "author": "Emil Johansson <emiljohansson@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "test": "ava src/**/test.js"
+  },
   "devDependencies": {
-    "list-files": "^1.0.1",
-    "sinon": "^1.15.3",
-    "tap-dot": "^1.0.0",
-    "tap-spec": "^4.0.0",
-    "tape": "^4.0.0"
+    "ava": "^0.21.0",
+    "benchmark": "^2.1.0",
+    "sinon": "^2.3.8"
+  },
+  "dependencies": {
+    "array-insertat": "^2.0.0"
   }
 }
