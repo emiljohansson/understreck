@@ -1,6 +1,6 @@
 import isArray from '../understreck.isarray'
 
-const chunk = (array, size) => {
+export default (array, size = 0) => {
   const result = []
   const length = array
     ? array.length
@@ -10,7 +10,7 @@ const chunk = (array, size) => {
   if (!isArray(array)) {
     return result
   }
-  if (typeof size !== 'number' || size < 1 || size >= length) {
+  if (size < 1 || size >= length) {
     return array
   }
   while (startIndex < length) {
@@ -20,5 +20,3 @@ const chunk = (array, size) => {
   }
   return result
 }
-
-export default chunk

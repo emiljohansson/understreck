@@ -9,7 +9,7 @@ test('do nothing', t => {
 })
 
 test('return first match', t => {
-  var users = [{
+  const users = [{
     'user': 'barney',
     'age': 36,
     'active': true
@@ -22,11 +22,8 @@ test('return first match', t => {
     'age': 1,
     'active': true
   }]
-  var result = find(users, chr => chr.age < 40)
-
-  t.is(result, users[0])
-
-  result = find(users, chr => chr.age < 30)
-
-  t.is(result, users[2])
+  let actual = find(users, user => user.age < 40)
+  t.is(actual, users[0])
+  actual = find(users, user => user.age < 30)
+  t.is(actual, users[2])
 })
