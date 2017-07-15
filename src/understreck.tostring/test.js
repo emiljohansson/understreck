@@ -7,13 +7,13 @@ const typeNumber = '[object Number]'
 const typeBoolean = '[object Boolean]'
 
 test(t => {
-  t.is(toString(new String), typeString)
+  t.is(toString(new String()), typeString)  // eslint-disable-line no-new-wrappers
   t.is(toString(''), typeString)
-  t.is(toString(new Function), typeFunction)
+  t.is(toString(new Function()), typeFunction)  // eslint-disable-line no-new-func
   t.is(toString(() => {}), typeFunction)
   t.is(toString(class {}), typeFunction)
-  t.is(toString(new Number), typeNumber)
+  t.is(toString(new Number()), typeNumber)  // eslint-disable-line no-new-wrappers
   t.is(toString(0), typeNumber)
-  t.is(toString(new Boolean), typeBoolean)
+  t.is(toString(new Boolean()), typeBoolean)  // eslint-disable-line no-new-wrappers
   t.is(toString(false), typeBoolean)
 })

@@ -16,6 +16,6 @@ test('true', t => {
   t.true(isString('null'))
   t.true(isString('undefined'))
   t.true(isString('NaN'))
-  t.true(isString(new String()))
-  t.true(isString(new String('Hello')))
+  t.true(isString(new String())) // eslint-disable-line no-new-wrappers
+  t.true(isString(new String('Hello'))) // eslint-disable-line no-new-wrappers
 })

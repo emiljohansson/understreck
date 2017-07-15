@@ -4,9 +4,9 @@ import isBoolean from '../understreck.isboolean'
 test('true', t => {
   t.true(isBoolean(true))
   t.true(isBoolean(false))
-  t.true(isBoolean(new Boolean()))
-  t.true(isBoolean(new Boolean(false)))
-  t.true(isBoolean(new Boolean(true)))
+  t.true(isBoolean(new Boolean())) // eslint-disable-line no-new-wrappers
+  t.true(isBoolean(new Boolean(false))) // eslint-disable-line no-new-wrappers
+  t.true(isBoolean(new Boolean(true))) // eslint-disable-line no-new-wrappers
 })
 
 test('false', t => {
