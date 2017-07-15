@@ -9,7 +9,7 @@ test('return an array', t => {
 })
 
 test('return keys of the object', t => {
-  function Foo() {
+  function Foo () {
     this.a = 1
     this.b = 2
   }

@@ -22,15 +22,11 @@ test('return first match', t => {
     'age': 1,
     'active': true
   }]
-  var result = find(users, function(chr) {
-    return chr.age < 40
-  })
+  var result = find(users, chr => chr.age < 40)
 
   t.is(result, users[0])
 
-  result = find(users, function(chr) {
-    return chr.age < 30
-  })
+  result = find(users, chr => chr.age < 30)
 
   t.is(result, users[2])
 })

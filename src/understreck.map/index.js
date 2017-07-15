@@ -1,6 +1,6 @@
 import forEach from '../understreck.foreach'
 
-function map(collection, iteratee) {
+function map (collection, iteratee) {
   var result = []
   forEach(collection, item => {
     result.push(iteratee(item))

@@ -6,5 +6,5 @@ test('return false', t => {
 })
 
 test('return true', t => {
-  t.true(isFunction(function() {}))
+  t.true(isFunction(function () {}))
 })

@@ -13,7 +13,7 @@ const chunk = (array, size) => {
   if (typeof size !== 'number' || size < 1 || size >= length) {
     return array
   }
-  while(startIndex < length) {
+  while (startIndex < length) {
     result.push(array.slice(startIndex, nextIndex))
     startIndex += size
     nextIndex += size

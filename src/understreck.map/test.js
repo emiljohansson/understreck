@@ -16,7 +16,7 @@ test('call callback each iteration', t => {
 })
 
 test('modify each item', t => {
-  function timesByThree(value) {
+  function timesByThree (value) {
     return value * 3
   }
   var result = map([1, 2, 3], timesByThree)

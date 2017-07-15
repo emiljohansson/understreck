@@ -1,9 +1,8 @@
-const insertAt = require('array-insertat')
+import insertAt from 'array-insertat'
 import isArray from '../understreck.isarray'
 import isString from '../understreck.isstring'
 
 const getByString = (object, path) => {
-  let result
   let paths = path.split('.')
   let index = paths.length
   while (index--) {
@@ -29,12 +28,12 @@ const byKey = (object, path) => {
 }
 
 export default (object, path, defaultValue) => {
- let result
- if (isString(path)) {
-   result = getByString(object, path)
- }
- if (isArray(path)) {
-   result = getByArray(object, path)
- }
- return result || defaultValue
+  let result
+  if (isString(path)) {
+    result = getByString(object, path)
+  }
+  if (isArray(path)) {
+    result = getByArray(object, path)
+  }
+  return result || defaultValue
 }

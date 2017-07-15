@@ -9,7 +9,7 @@ test('find by string', t => {
   t.deepEqual(get(object, 'a[0].b', 'default'), { 'c': 3 })
 })
 
-test('find by array' ,t => {
+test('find by array', t => {
   t.is(get(object, ['a', '0', 'b', 'c']), 3)
   t.is(get(object, ['a', '1', 'b', 'c']), undefined)
 })

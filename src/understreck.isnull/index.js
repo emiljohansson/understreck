@@ -1,7 +1,5 @@
-
-
-function isNull(value) {
-    return value === null
+function isNull (value) {
+  return value === null
 }
 
 export default isNull

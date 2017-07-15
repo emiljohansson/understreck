@@ -1,6 +1,6 @@
 import isArray from '../understreck.isarray'
 
-function indexOf(array, value, fromIndex = 0) {
+function indexOf (array, value, fromIndex = 0) {
   if (!isArray(array)) {
     return false
   }

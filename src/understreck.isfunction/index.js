@@ -1,7 +1,5 @@
-
-
-function isFunction(value) {
-    return typeof value === 'function'
+function isFunction (value) {
+  return typeof value === 'function'
 }
 
 export default isFunction

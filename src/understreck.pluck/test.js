@@ -8,7 +8,7 @@ test('return an array', t => {
   }, {
     a: 123
   }]), [])
-  t.deepEqual(pluck(null, "name"), [])
+  t.deepEqual(pluck(null, 'name'), [])
 })
 
 test('return values based on key', t => {

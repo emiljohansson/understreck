@@ -8,7 +8,7 @@ test('return a boolean', t => {
 })
 
 test('arrays - compare all objects', t => {
-  function isBoolean(v) {
+  function isBoolean (v) {
     return typeof v === 'boolean'
   }
   t.is(some([undefined, 1, null, 'yes'], isBoolean), false)

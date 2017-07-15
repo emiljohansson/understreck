@@ -4,7 +4,7 @@ import isArray from '../understreck.isarray'
 import isString from '../understreck.isstring'
 import keys from '../understreck.keys'
 
-function includes(collection, target, fromIndex) {
+function includes (collection, target, fromIndex) {
   if (isArray(collection)) {
     return indexOf(collection, target, fromIndex)
   }
@@ -17,7 +17,7 @@ function includes(collection, target, fromIndex) {
   return false
 }
 
-function inObject(collection, target) {
+function inObject (collection, target) {
   let result = false
   forEach(keys(collection), key => {
     if (collection[key] === target) {
@@ -27,7 +27,7 @@ function inObject(collection, target) {
   return result
 }
 
-function inString(collection, target, fromIndex) {
+function inString (collection, target, fromIndex) {
   return collection.indexOf(target, fromIndex) >= 0
 }
 

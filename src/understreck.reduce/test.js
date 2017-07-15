@@ -1,7 +1,7 @@
 import test from 'ava'
 import reduce from '.'
 
-function add(a, b) {
+function add (a, b) {
   return a + b
 }
 
@@ -10,7 +10,7 @@ test('arrays - return first value', t => {
 })
 
 test('arrays - sum the numbers', t => {
-  function sum(result, value) {
+  function sum (result, value) {
     return add(result, value)
   }
   t.is(reduce([1, 2, 3], sum), 6)
@@ -28,7 +28,7 @@ test('objects - modify each number', t => {
   t.deepEqual(reduce({
     'a': 1,
     'b': 2
-  }, function(result, n, key) {
+  }, (result, n, key) => {
     result[key] = n * 3
     return result
   }, {}), {

@@ -22,15 +22,11 @@ test('return first match', t => {
     'age': 1,
     'active': true
   }]
-  var result = findIndex(users, function(chr) {
-    return chr.age < 40
-  })
+  var result = findIndex(users, chr => chr.age < 40)
 
   t.is(result, 0)
 
-  result = findIndex(users, function(chr) {
-    return chr.age < 30
-  })
+  result = findIndex(users, chr => chr.age < 30)
 
   t.is(result, 2)
 })

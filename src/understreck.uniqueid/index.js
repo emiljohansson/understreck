@@ -1,10 +1,8 @@
+let currentId = 0
 
-
-var currentId = 0
-
-function uniqueId() {
-    var id = ++currentId
-    return id
+function uniqueId () {
+  const id = ++currentId
+  return id
 }
 
 export default uniqueId

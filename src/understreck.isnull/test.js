@@ -7,5 +7,5 @@ test('return a boolean', t => {
   t.is(isNull(undefined), false)
   t.is(isNull(void 0), false)
   t.is(isNull(123), false)
-  t.is(isNull("abc"), false)
+  t.is(isNull('abc'), false)
 })

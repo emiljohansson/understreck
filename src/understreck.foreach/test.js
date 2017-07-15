@@ -6,7 +6,7 @@ test('do nothing', t => {
   let callback = sinon.spy()
   forEach()
   t.false(callback.called)
-  forEach(123, "abc")
+  forEach(123, 'abc')
   t.false(callback.called)
   forEach(callback)
   t.false(callback.called)
@@ -26,7 +26,7 @@ test('call callback each iteration', t => {
 test('pass item each iteration', t => {
   var result = []
 
-  function iteratee(value) {
+  function iteratee (value) {
     result.push(value)
   }
   forEach([1, 2, 3], iteratee)
@@ -36,7 +36,7 @@ test('pass item each iteration', t => {
 test('pass key each iteration', t => {
   var result = []
 
-  function iteratee(value, key) {
+  function iteratee (value, key) {
     result.push(key)
   }
   forEach([1, 2, 3], iteratee)

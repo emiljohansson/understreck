@@ -7,5 +7,5 @@ test('return a boolean', t => {
   t.is(isUndefined(void 0), true)
   t.is(isUndefined(null), false)
   t.is(isUndefined(123), false)
-  t.is(isUndefined("abc"), false)
+  t.is(isUndefined('abc'), false)
 })
