@@ -11,4 +11,4 @@ function keys(object) {
     return result
 }
 
-module.exports = keys
+export default keys

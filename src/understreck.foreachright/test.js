@@ -1,6 +1,6 @@
 import test from 'ava'
 import sinon from 'sinon'
-var forEachRight = require('./')
+import forEachRight from '.'
 
 test('do nothing', t => {
   const callback = sinon.spy()

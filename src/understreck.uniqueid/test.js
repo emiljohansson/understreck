@@ -1,5 +1,5 @@
 import test from 'ava'
-var uniqueId = require('./')
+import uniqueId from '.'
 
 test('return a higher number each call', t => {
   var first = uniqueId()

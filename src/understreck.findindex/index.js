@@ -1,7 +1,7 @@
 
 
-const isArray = require('../understreck.isarray')
-const isFunction = require('../understreck.isfunction')
+import isArray from '../understreck.isarray'
+import isFunction from '../understreck.isfunction'
 
 function findIndex(collection, predicate) {
     if (!isArray(collection) || !isFunction(predicate)) {
@@ -16,4 +16,4 @@ function findIndex(collection, predicate) {
     }
 }
 
-module.exports = findIndex
+export default findIndex

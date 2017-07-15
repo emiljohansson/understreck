@@ -1,6 +1,6 @@
 const insertAt = require('array-insertat')
-const isArray = require('../understreck.isarray')
-const isString = require('../understreck.isstring')
+import isArray from '../understreck.isarray'
+import isString from '../understreck.isstring'
 
 const getByString = (object, path) => {
   let result
@@ -28,7 +28,7 @@ const byKey = (object, path) => {
   return object[path]
 }
 
-module.exports = (object, path, defaultValue) => {
+export default (object, path, defaultValue) => {
  let result
  if (isString(path)) {
    result = getByString(object, path)

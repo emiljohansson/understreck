@@ -1,5 +1,5 @@
 import test from 'ava'
-const isArray = require('./')
+import isArray from '.'
 
 test('return false', t => {
   t.false(isArray())

@@ -1,5 +1,5 @@
-const isArray = require('../understreck.isarray')
-const isFunction = require('../understreck.isfunction')
+import isArray from '../understreck.isarray'
+import isFunction from '../understreck.isfunction'
 
 function forEach(collection, iteratee) {
   if (!isArray(collection) || !isFunction(iteratee)) {
@@ -12,4 +12,4 @@ function forEach(collection, iteratee) {
   }
 }
 
-module.exports = forEach
+export default forEach

@@ -1,5 +1,5 @@
 import test from 'ava'
-const includes = require('./')
+import includes from '.'
 
 test('do nothing', t => {
   t.false(includes())

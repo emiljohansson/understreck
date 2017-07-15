@@ -1,4 +1,4 @@
-const isArray = require('../understreck.isarray')
+import isArray from '../understreck.isarray'
 
 const chunk = (array, size) => {
   const result = []
@@ -21,4 +21,4 @@ const chunk = (array, size) => {
   return result
 }
 
-module.exports = chunk
+export default chunk

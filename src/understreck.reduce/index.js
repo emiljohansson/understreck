@@ -1,8 +1,8 @@
 
 
-const keys = require('../understreck.keys')
-const isArray = require('../understreck.isarray')
-const isFunction = require('../understreck.isfunction')
+import keys from '../understreck.keys'
+import isArray from '../understreck.isarray'
+import isFunction from '../understreck.isfunction'
 
 function reduce(collection, iteratee, accumulator, thisArg) {
     if (isArray(collection)) {
@@ -41,4 +41,4 @@ function reduceObject(collection, iteratee, accumulator, thisArg) {
     return accumulator
 }
 
-module.exports = reduce
+export default reduce

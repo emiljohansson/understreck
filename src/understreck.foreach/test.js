@@ -1,6 +1,6 @@
 import test from 'ava'
 import sinon from 'sinon'
-const forEach = require('./')
+import forEach from '.'
 
 test('do nothing', t => {
   let callback = sinon.spy()

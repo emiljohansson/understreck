@@ -7,4 +7,4 @@ function uniqueId() {
     return id
 }
 
-module.exports = uniqueId
+export default uniqueId

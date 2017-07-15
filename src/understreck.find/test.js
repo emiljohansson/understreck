@@ -1,6 +1,6 @@
 import test from 'ava'
 import sinon from 'sinon'
-const find = require('./')
+import find from '.'
 
 test('do nothing', t => {
   const callback = sinon.spy()

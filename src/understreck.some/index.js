@@ -1,7 +1,7 @@
 
 
-const isArray = require('../understreck.isarray')
-const isFunction = require('../understreck.isfunction')
+import isArray from '../understreck.isarray'
+import isFunction from '../understreck.isfunction'
 
 function some(collection, predicate) { //, thisArg
     var length = collection ? collection.length : 0
@@ -17,4 +17,4 @@ function some(collection, predicate) { //, thisArg
     return false
 }
 
-module.exports = some
+export default some

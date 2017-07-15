@@ -1,5 +1,5 @@
 import test from 'ava'
-var pluck = require('./')
+import pluck from '.'
 
 test('return an array', t => {
   t.deepEqual(pluck(), [])

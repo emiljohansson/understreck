@@ -1,5 +1,5 @@
 import test from 'ava'
-const isString = require('./')
+import isString from '.'
 
 test('not return false', t => {
   t.false(isString())

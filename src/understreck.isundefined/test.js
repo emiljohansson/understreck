@@ -1,5 +1,5 @@
 import test from 'ava'
-var isUndefined = require('./')
+import isUndefined from '.'
 
 test('return a boolean', t => {
   t.is(isUndefined(), true)

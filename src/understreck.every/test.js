@@ -1,5 +1,5 @@
 import test from 'ava'
-var every = require('./')
+import every from '.'
 
 test('return a boolean', t => {
   t.is(every(), false)

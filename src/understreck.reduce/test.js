@@ -1,5 +1,5 @@
 import test from 'ava'
-var reduce = require('./')
+import reduce from '.'
 
 function add(a, b) {
   return a + b

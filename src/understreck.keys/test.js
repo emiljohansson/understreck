@@ -1,5 +1,5 @@
 import test from 'ava'
-const keys = require('./')
+import keys from '.'
 
 test('return an array', t => {
   t.true(Array.isArray(keys()))

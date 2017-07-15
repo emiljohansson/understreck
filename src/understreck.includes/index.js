@@ -1,8 +1,8 @@
-const forEach = require('../understreck.foreach')
+import forEach from '../understreck.foreach'
 import indexOf from '../understreck.indexof'
-const isArray = require('../understreck.isarray')
-const isString = require('../understreck.isstring')
-const keys = require('../understreck.keys')
+import isArray from '../understreck.isarray'
+import isString from '../understreck.isstring'
+import keys from '../understreck.keys'
 
 function includes(collection, target, fromIndex) {
   if (isArray(collection)) {
@@ -31,4 +31,4 @@ function inString(collection, target, fromIndex) {
   return collection.indexOf(target, fromIndex) >= 0
 }
 
-module.exports = includes
+export default includes

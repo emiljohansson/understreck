@@ -1,5 +1,5 @@
 import test from 'ava'
-const isFunction = require('./')
+import isFunction from '.'
 
 test('return false', t => {
   t.false(isFunction())

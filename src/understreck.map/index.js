@@ -1,4 +1,4 @@
-const forEach = require('../understreck.foreach')
+import forEach from '../understreck.foreach'
 
 function map(collection, iteratee) {
   var result = []
@@ -8,4 +8,4 @@ function map(collection, iteratee) {
   return result
 }
 
-module.exports = map
+export default map

@@ -1,5 +1,5 @@
 import test from 'ava'
-const chunk = require('.')
+import chunk from '.'
 
 test('return an array', t => {
   t.is(Array.isArray(chunk()), true)

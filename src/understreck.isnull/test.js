@@ -1,5 +1,5 @@
 import test from 'ava'
-var isNull = require('./')
+import isNull from '.'
 
 test('return a boolean', t => {
   t.is(isNull(null), true)

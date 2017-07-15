@@ -1,5 +1,5 @@
-const isArray = require('../understreck.isarray')
-const isFunction = require('../understreck.isfunction')
+import isArray from '../understreck.isarray'
+import isFunction from '../understreck.isfunction'
 
 function every(collection, predicate) { //, thisArg
     if (isArray(collection) && isFunction(predicate)) {
@@ -19,4 +19,4 @@ function everyArray(collection, predicate) {
     return true
 }
 
-module.exports = every
+export default every

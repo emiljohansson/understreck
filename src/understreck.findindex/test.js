@@ -1,6 +1,6 @@
 import test from 'ava'
 import sinon from 'sinon'
-const findIndex = require('./')
+import findIndex from '.'
 
 test('do nothing', t => {
   const callback = sinon.spy()

@@ -1,5 +1,5 @@
 import test from 'ava'
-var some = require('./')
+import some from '.'
 
 test('return a boolean', t => {
   t.is(some(), false)
