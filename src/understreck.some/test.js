@@ -1,6 +1,6 @@
 
 
-const test = require('ava')
+import test from 'ava'
 var some = require('./')
 
 test('exists', t => {

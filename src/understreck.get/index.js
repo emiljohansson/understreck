@@ -1,8 +1,6 @@
 const insertAt = require('array-insertat')
 const isArray = require('../understreck.isarray')
-
-const isObject = value => Object.prototype.toString.call(value) === '[object Object]'
-const isString = value => typeof value === 'string'
+const isString = require('../understreck.isstring')
 
 const getByString = (object, path) => {
   let result

@@ -1,46 +1,37 @@
-
-
-const test = require('ava')
-var includes = require('./')
+import test from 'ava'
+import indexOf from '.'
 
 test('exists', t => {
-    t.is(typeof includes, 'function')
-
+  t.is(typeof indexOf, 'function')
 })
 
 test('do nothing', t => {
-    t.false(includes())
-    t.false(includes(null))
-    t.false(includes(null, 123))
-    t.false(includes(123, null))
-
+  t.false(indexOf())
+  t.false(indexOf(null))
+  t.false(indexOf(null, 123))
+  t.false(indexOf(123, null))
 })
 
-
 test('arrays - not find simple check for number', t => {
-    t.false(includes([1, 2, 3], 1.5))
-    t.false(includes([1, 2, 3], 4))
-    t.false(includes([1, 2, 3], 0))
-
+  t.false(indexOf([1, 2, 3], 1.5))
+  t.false(indexOf([1, 2, 3], 4))
+  t.false(indexOf([1, 2, 3], 0))
 })
 
 test('arrays - find simple check for number', t => {
-    t.true(includes([1, 2, 3], 1))
-    t.true(includes([1, 2, 3], 2))
-    t.true(includes([1, 2, 3], 3))
-
+  t.true(indexOf([1, 2, 3], 1))
+  t.true(indexOf([1, 2, 3], 2))
+  t.true(indexOf([1, 2, 3], 3))
 })
 
 test('arrays - not find from index', t => {
-    t.false(includes([1, 2, 3], 1, 1))
-    t.false(includes([1, 2, 3], 2, 2))
-    t.false(includes([1, 2, 3], 3, 3))
-
+  t.false(indexOf([1, 2, 3], 1, 1))
+  t.false(indexOf([1, 2, 3], 2, 2))
+  t.false(indexOf([1, 2, 3], 3, 3))
 })
 
 test('arrays - find from index', t => {
-    t.true(includes([1, 2, 3], 2, 1))
-    t.true(includes([1, 2, 3], 3, 1))
-    t.true(includes([1, 2, 3], 3, -5))
-
+  t.true(indexOf([1, 2, 3], 2, 1))
+  t.true(indexOf([1, 2, 3], 3, 1))
+  t.true(indexOf([1, 2, 3], 3, -5))
 })

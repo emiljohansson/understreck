@@ -1,6 +1,6 @@
 
 
-const test = require('ava')
+import test from 'ava'
 var uniqueId = require('./')
 
 test('exists', t => {

@@ -1,4 +1,4 @@
-const test = require('ava')
+import test from 'ava'
 const chunk = require('.')
 
 test('return an array', t => {

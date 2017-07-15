@@ -1,6 +1,6 @@
 
 
-const test = require('ava')
+import test from 'ava'
 var isNull = require('./')
 
 test('exists', t => {

@@ -1,6 +1,6 @@
 
 
-var forEach = require('../understreck.foreach')
+const forEach = require('../understreck.foreach')
 const isArray = require('../understreck.isarray')
 var isUndefined = require('../understreck.isundefined')
 

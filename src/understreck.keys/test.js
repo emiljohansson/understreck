@@ -1,7 +1,7 @@
 
 
-const test = require('ava')
-var keys = require('./')
+import test from 'ava'
+const keys = require('./')
 
 test('exists', t => {
     t.is(typeof keys, 'function')

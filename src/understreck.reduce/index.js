@@ -1,6 +1,6 @@
 
 
-var keys = require('../understreck.keys')
+const keys = require('../understreck.keys')
 const isArray = require('../understreck.isarray')
 const isFunction = require('../understreck.isfunction')
 

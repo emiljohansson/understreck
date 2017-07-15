@@ -1,8 +1,8 @@
 
 
-const test = require('ava')
+import test from 'ava'
 const sinon = require('sinon')
-var forEach = require('./')
+const forEach = require('./')
 
 test('exists', t => {
     t.is(typeof forEach, 'function')

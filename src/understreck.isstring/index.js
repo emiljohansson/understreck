@@ -1,7 +1,3 @@
-
-
-function isString(value) {
-    return typeof value === 'string'
-}
+const isString = value => typeof value === 'string'
 
 module.exports = isString
