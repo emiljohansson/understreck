@@ -1,6 +1,6 @@
 import test from 'ava'
 import sinon from 'sinon'
-import forEach from '.'
+import forEach from '../understreck.foreach'
 
 test('do nothing', t => {
   let callback = sinon.spy()
