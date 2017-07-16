@@ -1,4 +1,4 @@
-import isUndefined from '../isundefined'
+import isUndefined from '../isUndefined'
 import getTag from '../lib/gettag'
 
 export default value =>

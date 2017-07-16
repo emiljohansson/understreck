@@ -1,5 +1,5 @@
 import test from 'ava'
-import upperCase from '../uppercase'
+import upperCase from '../upperCase'
 
 test('falsy', t => {
   t.is(upperCase(''), '')

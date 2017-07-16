@@ -1,5 +1,5 @@
 import test from 'ava'
-import startCase from '../startcase'
+import startCase from '../startCase'
 
 test('falsy', t => {
   t.is(startCase(''), '')

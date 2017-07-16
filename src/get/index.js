@@ -1,6 +1,6 @@
 import insertAt from 'array-insertat'
-import isArray from '../isarray'
-import isString from '../isstring'
+import isArray from '../isArray'
+import isString from '../isString'
 
 const getByString = (object, path) => {
   let paths = path.split('.')

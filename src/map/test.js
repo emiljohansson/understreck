@@ -1,7 +1,7 @@
 import test from 'ava'
 import sinon from 'sinon'
 import map from '.'
-import isArray from '../isarray'
+import isArray from '../isArray'
 
 test('returns an array', t => {
   t.is(isArray(map()), true)

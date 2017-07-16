@@ -1,5 +1,5 @@
 import test from 'ava'
-import uniqueId from '.'
+import uniqueId from '../uniqueId'
 
 test('return a higher number each call', t => {
   const first = uniqueId()

@@ -1,4 +1,4 @@
-import isString from '../isstring'
+import isString from '../isString'
 
 function keys (object) {
   const result = []

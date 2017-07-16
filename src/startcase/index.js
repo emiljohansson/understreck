@@ -1,4 +1,4 @@
-import toString from '../tostring'
+import toString from '../toString'
 import baseUpperCase from '../lib/baseuppercase'
 
 const notEmpty = string => string.length > 0

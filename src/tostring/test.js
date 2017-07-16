@@ -1,5 +1,5 @@
 import test from 'ava'
-import toString from '../tostring'
+import toString from '../toString'
 
 test('objects', t => {
   t.is(toString(''), '')

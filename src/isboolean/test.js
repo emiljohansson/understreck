@@ -1,5 +1,5 @@
 import test from 'ava'
-import isBoolean from '../isboolean'
+import isBoolean from '../isBoolean'
 
 test('true', t => {
   t.true(isBoolean(true))

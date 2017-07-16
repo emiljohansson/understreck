@@ -1,4 +1,4 @@
-import isNumber from '../isnumber'
+import isNumber from '../isNumber'
 
 export default value => {
   if (value == null) {

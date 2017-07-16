@@ -1,6 +1,6 @@
 import test from 'ava'
 import some from '.'
-import isBoolean from '../isboolean'
+import isBoolean from '../isBoolean'
 
 test('return a boolean', t => {
   t.is(some(), false)

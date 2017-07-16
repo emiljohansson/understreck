@@ -1,5 +1,5 @@
-import isArray from '../isarray'
-import isFunction from '../isfunction'
+import isArray from '../isArray'
+import isFunction from '../isFunction'
 
 function forEach (collection, iteratee) {
   if (!isArray(collection) || !isFunction(iteratee)) {

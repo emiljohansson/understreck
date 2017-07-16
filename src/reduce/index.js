@@ -1,6 +1,6 @@
 import keys from '../keys'
-import isArray from '../isarray'
-import isFunction from '../isfunction'
+import isArray from '../isArray'
+import isFunction from '../isFunction'
 
 function reduce (collection, iteratee, accumulator, thisArg) {
   if (isArray(collection)) {

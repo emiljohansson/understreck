@@ -1,4 +1,4 @@
-import toString from '../tostring'
+import toString from '../toString'
 
 export default string => {
   string = toString(string)

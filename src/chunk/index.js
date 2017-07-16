@@ -1,4 +1,4 @@
-import isArray from '../isarray'
+import isArray from '../isArray'
 
 export default (array, size = 0) => {
   const result = []

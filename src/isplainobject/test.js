@@ -1,5 +1,5 @@
 import test from 'ava'
-import isPlainObject from '../isplainobject'
+import isPlainObject from '../isPlainObject'
 
 test('false', t => {
   function Foo () {

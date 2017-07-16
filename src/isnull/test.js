@@ -1,5 +1,5 @@
 import test from 'ava'
-import isNull from '.'
+import isNull from '../isNull'
 
 test('return a boolean', t => {
   t.is(isNull(null), true)

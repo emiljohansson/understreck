@@ -1,5 +1,5 @@
 import test from 'ava'
-import isNumber from '../isnumber'
+import isNumber from '../isNumber'
 
 test('false', t => {
   t.false(isNumber())

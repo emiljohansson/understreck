@@ -1,4 +1,4 @@
-import isArray from '../isarray'
+import isArray from '../isArray'
 
 function indexOf (array, value, fromIndex = 0) {
   if (!isArray(array)) {

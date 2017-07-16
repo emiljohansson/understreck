@@ -1,5 +1,5 @@
 import test from 'ava'
-import isUndefined from '../isundefined'
+import isUndefined from '../isUndefined'
 
 test('false', t => {
   t.false(isUndefined(null))

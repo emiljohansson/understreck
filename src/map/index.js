@@ -1,4 +1,4 @@
-import forEach from '../foreach'
+import forEach from '../forEach'
 
 function map (collection, iteratee) {
   const result = []

@@ -1,7 +1,7 @@
-import forEach from '../foreach'
-import indexOf from '../indexof'
-import isArray from '../isarray'
-import isString from '../isstring'
+import forEach from '../forEach'
+import indexOf from '../indexOf'
+import isArray from '../isArray'
+import isString from '../isString'
 import keys from '../keys'
 
 function includes (collection, target, fromIndex) {

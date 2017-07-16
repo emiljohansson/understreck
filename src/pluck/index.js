@@ -1,6 +1,6 @@
-import forEach from '../foreach'
-import isArray from '../isarray'
-import isUndefined from '../isundefined'
+import forEach from '../forEach'
+import isArray from '../isArray'
+import isUndefined from '../isUndefined'
 
 function pluck (collection, path) {
   const result = []

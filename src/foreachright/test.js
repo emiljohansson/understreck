@@ -1,6 +1,6 @@
 import test from 'ava'
 import sinon from 'sinon'
-import forEachRight from '.'
+import forEachRight from '../forEachRight'
 
 test('do nothing', t => {
   const callback = sinon.spy()

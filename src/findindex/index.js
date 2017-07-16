@@ -1,5 +1,5 @@
-import isArray from '../isarray'
-import isFunction from '../isfunction'
+import isArray from '../isArray'
+import isFunction from '../isFunction'
 
 function findIndex (collection, predicate) {
   if (!isArray(collection) || !isFunction(predicate)) {
