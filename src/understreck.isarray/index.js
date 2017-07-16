@@ -1,5 +1,5 @@
-import toString from '../understreck.tostring'
+import getTag from '../.internal/gettag'
 
-const isArray = collection => toString(collection) === '[object Array]'
+const isArray = collection => getTag(collection) === '[object Array]'
 
 export default Array.isArray || isArray

@@ -1,5 +1,5 @@
 import test from 'ava'
-import chunk from '.'
+import chunk from '../understreck.chunk'
 
 test('return an array', t => {
   t.is(Array.isArray(chunk()), true)

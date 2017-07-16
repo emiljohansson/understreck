@@ -1,3 +1,3 @@
-import toString from '../understreck.tostring'
+import getTag from '../.internal/gettag'
 
-export default value => toString(value) === '[object Boolean]'
+export default value => getTag(value) === '[object Boolean]'

@@ -1,6 +1,6 @@
 import isUndefined from '../understreck.isundefined'
-import toString from '../understreck.tostring'
+import getTag from '../.internal/gettag'
 
 export default value =>
-  toString(value) === '[object Object]' &&
+  getTag(value) === '[object Object]' &&
   (value.constructor === Object || isUndefined(value.constructor))
