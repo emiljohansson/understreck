@@ -10,7 +10,6 @@ function some (collection, predicate) { //, thisArg
         return true
       }
     }
-    return false
   }
   return false
 }
