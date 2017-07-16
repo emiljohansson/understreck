@@ -1,5 +1,5 @@
 import isUndefined from '../understreck.isundefined'
-import getTag from '../.internal/gettag'
+import getTag from '../lib/gettag'
 
 export default value =>
   getTag(value) === '[object Object]' &&

@@ -1,5 +1,5 @@
 import test from 'ava'
-import getTag from '../understreck.tostring'
+import getTag from '.'
 
 const typeString = '[object String]'
 const typeFunction = '[object Function]'

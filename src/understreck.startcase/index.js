@@ -1,26 +1,25 @@
 import toString from '../understreck.tostring'
+import baseUpperCase from '../lib/baseuppercase'
 
 const notEmpty = string => string.length > 0
 
 const removeEmpty = array => array.filter(notEmpty)
 
-const upperCase = string => string.toUpperCase()
+const upperFirst = string => baseUpperCase(string[0]) + string.slice(1)
 
-const upperCaseFirstLetter = string => upperCase(string[0]) + string.slice(1)
+const charIsUpperCased = character => character === baseUpperCase(character)
 
-const charIsUpperCased = character => character === upperCase(character)
-
-const upperCaseFirstLetterEachWord = string => string
+const upperFirstEachWord = string => string
   .split(' ')
   .filter(notEmpty)
-  .map(upperCaseFirstLetter)
+  .map(upperFirst)
   .join(' ')
 
 export default string => {
   string = toString(string)
   string = removeEmpty(string.split('-')).join(' ')
   string = removeEmpty(string.split('_')).join(' ')
-  string = upperCaseFirstLetterEachWord(string)
+  string = upperFirstEachWord(string)
 
   const length = string.length
   const words = []

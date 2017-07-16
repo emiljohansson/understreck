@@ -1,4 +1,4 @@
-import getTag from '../.internal/gettag'
+import getTag from '../lib/gettag'
 
 const isArray = collection => getTag(collection) === '[object Array]'
 
