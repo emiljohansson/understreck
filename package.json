@@ -11,8 +11,10 @@
   "author": "Emil Johansson <emiljohansson@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "build": "webpack understreck.js dist/understreck.js && babel dist/understreck.js >> dist/understreck.js",
+    "generate": "node generate.js",
+    "webpack": "webpack understreck.js dist/understreck.js && babel dist/understreck.js >> dist/understreck.js",
     "minify": "uglifyjs dist/understreck.js >> dist/understreck.min.js",
+    "build": "npm run generate && npm run webpack && npm run minify",
     "benchmark": "node benchmarks",
     "lint": "standard {benchmarks,src}/**/* || exit 0",
     "test": "ava src/**/test.js"
@@ -36,9 +38,11 @@
     "babel-register": "^6.24.1",
     "benchmark": "^2.1.0",
     "chalk": "^2.0.1",
+    "create-file": "git+https://github.com/emiljohansson/create-file.git",
     "list-files": "^1.1.4",
     "sinon": "^2.3.8",
     "standard": "^10.0.2",
+    "string-replace-first": "git+https://github.com/emiljohansson/string-replace-first.git",
     "uglify-es": "^3.0.24",
     "webpack": "^3.3.0"
   },
