@@ -17,17 +17,26 @@
     "build": "npm run generate && npm run webpack && npm run minify",
     "benchmark": "node benchmarks",
     "lint": "standard {benchmarks,src}/**/* || exit 0",
-    "test": "ava src/**/test.js"
+    "test": "nyc ava"
   },
   "ava": {
     "babel": "inherit",
     "require": [
       "babel-register"
+    ],
+    "files": [
+      "src/to-string/test.js"
     ]
   },
   "babel": {
     "presets": [
       "latest"
+    ]
+  },
+  "nyc": {
+    "exclude": [
+      "benchmarks",
+      "src/**/test.js"
     ]
   },
   "devDependencies": {
@@ -40,6 +49,7 @@
     "chalk": "^2.0.1",
     "create-file": "git+https://github.com/emiljohansson/create-file.git",
     "list-files": "^1.1.4",
+    "nyc": "^11.0.3",
     "sinon": "^2.3.8",
     "standard": "^10.0.2",
     "string-replace-first": "git+https://github.com/emiljohansson/string-replace-first.git",
